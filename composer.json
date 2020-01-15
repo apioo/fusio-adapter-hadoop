@@ -1,0 +1,32 @@
+{
+  "name": "fusio/adapter-hadoop",
+  "description": "Provides a connection to hadoop",
+  "homepage": "http://fusio-project.org",
+  "keywords": ["fusio-adapter"],
+  "license": "AGPL-3.0",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "christoph.kappestein@gmail.com",
+      "homepage": "http://christoph.kappestein.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "fusio/engine": "^3.0",
+    "automattic/php-thrift-sql": "^0.3.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fusio\\Adapter\\Hadoop\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fusio\\Adapter\\Hadoop\\Tests\\": "tests/"
+    }
+  }
+}

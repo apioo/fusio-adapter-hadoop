@@ -1,0 +1,6 @@
+{
+  "connectionClass": [
+    "Fusio\\Adapter\\Hadoop\\Connection\\Hive",
+    "Fusio\\Adapter\\Hadoop\\Connection\\Impala"
+  ]
+}
