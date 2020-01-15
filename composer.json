@@ -1,6 +1,6 @@
 {
   "name": "fusio/adapter-hadoop",
-  "description": "Provides a connection to hadoop",
+  "description": "Provides a connection to hadoop services over thrift",
   "homepage": "http://fusio-project.org",
   "keywords": ["fusio-adapter"],
   "license": "AGPL-3.0",
