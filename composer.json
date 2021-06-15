@@ -1,14 +1,14 @@
 {
   "name": "fusio/adapter-hadoop",
   "description": "Provides a connection to hadoop services over thrift",
-  "homepage": "http://fusio-project.org",
+  "homepage": "https://www.fusio-project.org",
   "keywords": ["fusio-adapter"],
   "license": "AGPL-3.0",
   "authors": [
     {
       "name": "Christoph Kappestein",
       "email": "christoph.kappestein@gmail.com",
-      "homepage": "http://christoph.kappestein.com"
+      "homepage": "https://chrisk.app"
     }
   ],
   "require": {
