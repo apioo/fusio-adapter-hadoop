@@ -3,7 +3,7 @@
  * Fusio
  * A web-application to create dynamically RESTful APIs
  *
- * Copyright (C) 2015-2020 Christoph Kappestein <christoph.kappestein@gmail.com>
+ * Copyright (C) 2015-2022 Christoph Kappestein <christoph.kappestein@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -31,20 +31,16 @@ use Fusio\Engine\ParametersInterface;
  *
  * @author  Christoph Kappestein <christoph.kappestein@gmail.com>
  * @license http://www.gnu.org/licenses/agpl-3.0
- * @link    http://fusio-project.org
+ * @link    https://www.fusio-project.org/
  */
 class Impala implements ConnectionInterface
 {
-    public function getName()
+    public function getName(): string
     {
         return 'Impala';
     }
 
-    /**
-     * @param \Fusio\Engine\ParametersInterface $config
-     * @return \ThriftSQL\Impala
-     */
-    public function getConnection(ParametersInterface $config)
+    public function getConnection(ParametersInterface $config): \ThriftSQL\Impala
     {
         $host = $config->get('host');
         $port = $config->get('port');
@@ -58,7 +54,7 @@ class Impala implements ConnectionInterface
         return new \ThriftSQL\Impala($host, $port, $username, $password);
     }
 
-    public function configure(BuilderInterface $builder, ElementFactoryInterface $elementFactory)
+    public function configure(BuilderInterface $builder, ElementFactoryInterface $elementFactory): void
     {
         $builder->add($elementFactory->newInput('host', 'Host', 'text', 'The hostname'));
         $builder->add($elementFactory->newInput('port', 'Port', 'text', 'Optional the port (default is 21000)'));
