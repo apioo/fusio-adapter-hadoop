@@ -2,7 +2,6 @@
   "name": "fusio/adapter-hadoop",
   "description": "Provides a connection to hadoop services over thrift",
   "homepage": "https://www.fusio-project.org",
-  "keywords": ["fusio-adapter"],
   "license": "Apache-2.0",
   "authors": [
     {
